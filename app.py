@@ -19,7 +19,7 @@ def on_message(client, userdata, message):
         
 
 
-broker="broker.mqttdashboard.com"
+broker="190.158.28.34"
 port=1883
 client1= paho.Client("MiguelMercadoS")
 client1.on_message = on_message
