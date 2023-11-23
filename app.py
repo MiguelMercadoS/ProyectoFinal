@@ -71,7 +71,7 @@ st.subheader("Puedes deslizar para que la puerta se abra o se cierre.")
 values = st.slider('',0.0, 100.0)
 st.write('Apertura:', values)
 
-if st.button('Ejecutar acción'):
+if st.button('Abrir puerta'):
     client1= paho.Client("MiguelMercadoS")                           
     client1.on_publish = on_publish                          
     client1.connect(broker,port)   
