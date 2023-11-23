@@ -10,8 +10,6 @@ def on_publish(client,userdata,result):             #create function for callbac
     print("el dato se publicó \n")
     pass
 
-def on_message(client, userdata, message):
-	@@ -21,28 +21,30 @@ def on_message(client, userdata, message):
 
 broker="broker.mqttdashboard.com"
 port=1883
@@ -40,7 +38,6 @@ with col1:
 
         #client1.subscribe("Sensores")
 
-	@@ -51,37 +53,38 @@ def on_message(client, userdata, message):
         st.write('')
 
 with col2:         
