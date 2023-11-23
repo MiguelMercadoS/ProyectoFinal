@@ -9,7 +9,12 @@ act1="OFF"
 def on_publish(client,userdata,result):             #create function for callback
     print("el dato se publicó \n")
     pass
-
+def on_message(client, userdata, message):
+    global message_received
+    time.sleep(2)
+    message_received=str(message.payload.decode("utf-8"))
+    st.write(message_received)
+        
 
 broker="broker.mqttdashboard.com"
 port=1883
@@ -38,6 +43,7 @@ with col1:
 
         #client1.subscribe("Sensores")
 
+    else:
         st.write('')
 
 with col2:         
