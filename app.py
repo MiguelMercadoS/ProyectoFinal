@@ -36,7 +36,7 @@ with col1:
      
     image = Image.open('turn_on.png')
     st.image(image, width=100)
-    if st.button('TURN ON'):
+    if st.button('ON'):
         act1="ON"
         client1= paho.Client("MiguelMercadoS")                           
         client1.on_publish = on_publish                          
@@ -54,7 +54,7 @@ with col2:
     image = Image.open('turn_off.png')
 
     st.image(image, width=100)
-    if st.button('TURN OFF'):
+    if st.button('OFF'):
         act1="OFF"
         client1= paho.Client("MiguelMercadoS")                           
         client1.on_publish = on_publish                          
